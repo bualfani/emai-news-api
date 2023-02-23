@@ -15,6 +15,8 @@ r = requests.get(url)
 # Get a dictionary with data
 content = r.json()
 
+print(content)
+
 # Access the article titles and description
 body = ""
 for article in content['articles'][:20]:
